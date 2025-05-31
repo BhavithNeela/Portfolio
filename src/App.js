@@ -54,9 +54,9 @@ function App() {
   </span>
 </h1>
       <p className="lead">Full Stack Java Developer passionate about building backend and web solutions.</p>
-      <a href={process.env.PUBLIC_URL + '/Bhavith_Neela_Resume.pdf'} className="btn btn-outline-light mt-3" download>Download Resume</a>
+      <a href={process.env.PUBLIC_URL + './Bhavith_Neela_Resume.pdf'} className="btn btn-outline-light mt-3" download>Download Resume</a>
     </div>
-    <img src={process.env.PUBLIC_URL + '/BHavithPhoto.jpg'} alt="Bhavith" className="img-fluid rounded-circle mt-4 mt-md-4" style={{ width: '400px',height:'600px' }} />
+    <img src={process.env.PUBLIC_URL + './BhavithPhoto.jpg'} alt="Bhavith" className="img-fluid rounded-circle mt-4 mt-md-4" style={{ width: '400px',height:'600px' }} />
   </div>
 </section>
 
