@@ -77,3 +77,8 @@ a:hover {
   color: #dddddd;
   line-height: 1.6;
 }
+@media (max-width: 768px) {
+  #home img {
+    margin-bottom: 2rem;
+  }
+}

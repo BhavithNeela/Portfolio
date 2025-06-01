@@ -38,8 +38,8 @@ function App() {
         </div>
       </nav>
       
-      <section id="home" className="section unified-bg text-white" data-aos="fade-right" style={{height:'100vh'}}>
-  <div className="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+      <section id="home" className="section unified-bg text-white " s data-aos="fade-right" style={{height:'100vh',marginBottom:'180px'}}>
+<div className="container d-flex flex-column-reverse flex-md-row align-items-center justify-content-between text-center text-md-start">
     <div className="text-md-start text-center">
       <h1 className="display-5 fw-bold">
  {' '}
@@ -56,33 +56,44 @@ function App() {
       <p className="lead">Full Stack Java Developer passionate about building backend and web solutions.</p>
       <a href={process.env.PUBLIC_URL + './Bhavith_Neela_Resume.pdf'} className="btn btn-outline-light mt-3" download>Download Resume</a>
     </div>
-    <img src={process.env.PUBLIC_URL + './BhavithPhoto.jpg'} alt="Bhavith" className="img-fluid rounded-circle mt-4 mt-md-4" style={{ width: '400px',height:'600px' }} />
+<img
+  src={process.env.PUBLIC_URL + './BhavithPhoto.jpg'}
+  alt="Bhavith"
+  className="img-fluid rounded-circle mt-4 mt-md-0"
+  style={{
+    width: '100%',
+    maxWidth: '400px',
+    height: 'auto',
+    objectFit: 'cover'
+  }}
+/>
   </div>
 </section>
 
       {/* Skills Section */}
-      <section id="skills" className="section">
-        <div className="container">
-          <div className="row align-items-center">
-            
-            <div className="col-md-7">
-              <div className="card-left">
-                <h5>Skills</h5>
-                <div className="row g-3">
-                  {['Java', 'Spring Boot', 'React.js', 'MySQL', 'HTML/CSS/JS', 'Git & Postman'].map((skill, i) => (
-                    <div key={i} className="col-6">
-                      <div className="p-2 bg-white text-dark text-center shadow-sm rounded">{skill}</div>
-                    </div>
-                  ))}
-                </div>
+     <section id="skills" className="section" data-aos="">
+  <div className="container">
+    <div className="row align-items-center">
+      
+      <div className="col-md-7">
+        <div className="card-left">
+          <h5>Skills</h5>
+          <div className="row g-3">
+            {['Java', 'Spring Boot', 'React.js', 'MySQL', 'HTML/CSS/JS', 'Git & Postman'].map((skill, i) => (
+              <div key={i} className="col-6">
+                <div className="p-2 bg-white text-dark text-center shadow-sm rounded">{skill}</div>
               </div>
-            </div>
-            <div className="col-md-5 text-center">
-              <img src="https://cdn-icons-png.flaticon.com/512/2721/2721265.png" alt="Skills" className="img-fluid" style={{ maxWidth: '200px' }} />
-            </div>
+            ))}
           </div>
         </div>
-      </section>
+      </div>
+      <div className="col-md-5 text-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/2721/2721265.png" alt="Skills" className="img-fluid" style={{ maxWidth: '200px' }} />
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Projects Section */}
       <section id="projects" className="section">
